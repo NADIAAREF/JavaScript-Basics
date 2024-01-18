@@ -1,0 +1,64 @@
+javascript-
+a scripting language use to create and control dynamic website content.
+we can make a webpage dynamic using js.
+emmet extension
+.special#first:<div class="special" id="first"></div>
+
+INLINE JS:inside the tag
+<button onclick="alert('hello world')"> click me</button>
+
+INTERNAL JS: 
+btn.btn*7{random button}
+ <script>
+      document.querySelectorAll('.btn').forEach(item=>{
+        item.addEventListener('click', ()=>{
+          alert('this is awesome')
+        })
+      })
+    </script>
+
+External JS:
+<script src="./app.js">
+
+create app.js
+
+3 IMPORTANT FUNCTIONS:
+//document.write('hello world');
+//alert() for pop up
+//console.log() very important for displaying objects
+document.write('hello world')
+alert({ name: 'jhon' })
+console.log({ name: 'john' })
+
+VARIABLES: let variable_name='';
+//variables-Most basic building blocks
+//used to store ,access,modify=== value
+//declare ,assignment operator, assign value
+// variable names can contain digits,letters,underscores,$ 
+//cant start with numbers or keyword cannot be used as a variable name (ex:let let ='')
+//case sensitive-fullname vs Fullname
+//camelCase or Underscore
+
+//LET VS CONST VS VAR
+//using var
+var value = 'some value';
+console.log(value);
+
+value = 'some y value';
+console.log(value);
+
+const value2 = 'some const value';
+console.log(value2);
+
+// value2 = 'why value'; cant re-assign
+console.log(value2);
+
+let value3 = 'cvghio';
+console.log(value3);
+
+value3 = 'here is the value ';
+console.log(value3);
+
+' OR '' ARE SAME 
+
+value=parseInt(value)//input in a html form is a type of number , however html converts it to string . to again convert the string to number we use parseInt(number) 
